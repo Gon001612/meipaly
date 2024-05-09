@@ -1,0 +1,33 @@
+.banner {
+  background-image: url(../image-video/home_slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.banner_title p {
+  font-size: 1.4rem;
+}
+
+.banner_title h1 {
+  font-size: 4.2rem;
+  line-height: 90px;
+}
+
+.banner_title .btn {
+  margin-top: 20px;
+}
+
+.carousel--scroll i {
+  margin-top: 50px;
+  font-size: 1.8rem;
+  animation: 3s linear 1s infinite running slidein;
+}

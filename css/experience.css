@@ -1,0 +1,15 @@
+.experience {
+  background-image: url(../image-video/bussiness_img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* padding: 100px 0; */
+}
+
+.experience--video {
+  margin: 30px 0;
+}
+.experience--video video {
+  width: 100%;
+  object-fit: cover;
+}

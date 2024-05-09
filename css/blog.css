@@ -1,0 +1,100 @@
+.blog {
+  background-color: #f3f3f3;
+}
+
+.blog .title span {
+  color: #888888;
+}
+
+.blog .title h2 {
+  color: black;
+}
+
+/* Blog--Content */
+.blog--img {
+  position: relative;
+  overflow: hidden;
+}
+.blog--img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: contrast(50%) grayscale(50%);
+}
+
+.blog--content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 30px;
+  margin-top: 30px;
+}
+
+.grid-metro-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.grid-metro-10 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+/* Blog--overlay */
+.blog--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(230, 43, 74, 0.6);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.blog--overlay:hover {
+  opacity: 1;
+}
+.blog--overlay .overlay--icon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.blog--overlay:hover .overlay--icon {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.blog--overlay .overlay--text {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.blog--overlay:hover .overlay--text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.blog--overlay .overlay--text span {
+  color: #d0c7c8;
+  text-transform: uppercase;
+}
+
+.blog--overlay .overlay--text p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}

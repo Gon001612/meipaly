@@ -1,0 +1,59 @@
+.products {
+  background-color: black;
+}
+.service--content {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.slides--content {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.slides--content .item {
+  position: relative;
+  background-color: white;
+  color: #888888;
+  height: 230px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+
+.slides--content .item i {
+  font-size: 2.9rem;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}
+
+.slick-dots li button:before {
+  font-size: 40px;
+  color: #888888;
+}
+
+.slick-dots li:hover button:before {
+  color: white;
+}
+
+.slides--content .item::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 0;
+  background-color: red;
+  right: 0;
+  top: 0;
+  display: block;
+  transition: all 0.3s;
+}
+
+.slides--content .item:hover::after {
+  height: 100%;
+}

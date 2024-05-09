@@ -1,0 +1,22 @@
+.number {
+  background-color: black;
+}
+
+.number .container {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.number--item span {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.number--item p {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
